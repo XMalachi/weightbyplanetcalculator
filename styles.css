@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container  {
+    text-align: center;
+}
+
+nav {
+    padding: 2%px;
+    color: white;
+}
+
+nav h1{
+    font-size: 2em;
+}
+
+input {
+    margin-top: 30px;
+}
+.values {
+    margin-top: 100px;
+}
+input, select{
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: rgba(128, 128, 128, 0.534);
+    color: white;
+}
+
+button {
+    background-color: lightgreen;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(57, 85, 57);
+    transition: 0.5s;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* result styles */
+.content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(92, 89, 89, 0.637);
+    padding: 10px 0 5px;
+}
+.globe{
+    margin-right: 20px;
+}
+
+#resultGroup{
+    color: white;
+    margin-left: 20px;
+
+}
+
+#result {
+    color: white;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.596);
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.reultPrg{
+    text-align: center;
+}
+strong{
+    text-transform: uppercase;
+}
+
+@media (max-width:620px){
+    .content {
+        flex-direction: column-reverse;
+    }
+    input{
+        width: 80%;
+        margin-top: 20px;
+    }
+    select{
+        width: 88%;
+        margin-top: 20px;
+    }
+    button {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .globe{
+        margin-right: 0;
+    }
+    
+    #resultGroup{
+        margin-left: 0;
+    
+    }
+    
+    #result {
+        margin-bottom: 30px;
+    }
+    
+}

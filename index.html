@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate world object weight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>
+                Calculate the weigth of an object in a planet
+            </h1>
+        </nav>
+
+
+        <div class="values">
+            <input type="text" placeholder="mass in kg" id="num">
+
+            <select name="planets" id="planets">
+                <option value="select a planet">Select a Planet</option>
+                <option value="Earth">Earth</option>
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptune">Neptune</option>
+                <option value="Pluto">Pluto</option>
+                <option value="Moon">Moon</option>
+            </select>
+        
+        
+            <button id="calculate" onclick="calcWeight()">Calculate</button>
+
+        </div>
+
+        
+        <div  class="content">
+            <div class="img">
+                <img src="pics/globe-png.png" class="globe" alt="globe">
+            </div>
+            
+            <div id="resultGroup">
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
